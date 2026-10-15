@@ -3,8 +3,12 @@
 
 /* This build makes --surface-sidebar transparent in dark mode; point it at
    gray-1 so the sidebar keeps a visible surface. */
+:root {
+	--surface-sidebar: #e3ecf4;
+}
+
 [data-theme='dark'] {
-	--surface-sidebar: var(--surface-gray-1);
+	--surface-sidebar: #062841;
 }
 
 /* frappe-ui beta.7 FormLabel differs from InputLabel; match standalone labels
